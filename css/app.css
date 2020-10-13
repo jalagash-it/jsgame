@@ -15,6 +15,24 @@ body {
     flex-direction: column;
 }
 
+@media screen and (min-width: 1501px) {
+    .you-can-play-only-on-laptop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .you-can-play-only-on-laptop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #e43c3c;
+    }
+}
+
 header {
     display: flex;
     align-items: center;
