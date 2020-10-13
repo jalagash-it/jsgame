@@ -1,0 +1,15 @@
+.question-area {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.question-area>.answer {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    min-width: 120px;
+    text-align: center;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
