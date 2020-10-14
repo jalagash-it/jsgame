@@ -58,6 +58,7 @@ class QuestionModuleClass {
         clearInterval(self.questionInterval);
         self.currentAnswers.forEach(a => a.remove());
         self.currentAnswers.length = 0;
+        self.asked = false;
     }
     questionEngine() {
         if (!self.asked) {
