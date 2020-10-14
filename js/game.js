@@ -165,6 +165,7 @@ class Game {
         self.moving.toTop = false;
         self.moving.toBottom = false;
         self.status = 'stop';
+        scoreDiv.innerText = 0;
     }
     restart() {
         self.stop();
