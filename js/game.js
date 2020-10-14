@@ -166,6 +166,7 @@ class Game {
         self.moving.toBottom = false;
         self.status = 'stop';
         scoreDiv.innerText = 0;
+        questionLabel.innerText = '';
     }
     restart() {
         self.stop();

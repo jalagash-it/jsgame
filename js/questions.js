@@ -54,7 +54,11 @@ class QuestionModuleClass {
     questionPause() {
         clearInterval(self.questionInterval);
     }
-    questionStop() {}
+    questionStop() {
+        clearInterval(self.questionInterval);
+        self.currentAnswers.forEach(a => a.remove());
+        self.currentAnswers.length = 0;
+    }
     questionEngine() {
         if (!self.asked) {
             let q = self.getNextQuestion();
