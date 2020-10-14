@@ -31,19 +31,7 @@ class QuestionModuleClass {
 
     }
     questionTest() {
-        self.addQuestion('Қыздырынып ал :)', 'бірінші сұрақтың тегін жауабы : )');
-        self.addQuestion('Дұрыс жауапты таңда', 'дұрыс жауап', "қате жауап");
-        self.addQuestion('Тағы бір қайталайық', 'дұрыс жауап', "қате жауап");
-        self.addQuestion('Жаудың ракетасын қиратсаңыз қанша ұпай ?', '15', "0");
-        self.addQuestion('Дұрысы жауапты тапсаңыз қанша ұпай ?', '100', "0");
-        self.addQuestion('Дайынсың ба? :)', 'иә, кеттік !');
-        self.addQuestion('қайсысы дабыл қағады ?', 'alert', 'confirm', 'promt');
-        self.addQuestion('қайсысы рұқсат сұрайды ?', 'confirm', 'alert', 'promt');
-        self.addQuestion('қайсысы бағдарламалау тіліне жатады ?', 'javascript', 'html', 'css');
-        self.addQuestion('қайсысы сандық типке жатпайды ?', 'string', 'float');
-        self.addQuestion('Math.random() < 1', 'true', 'false');
-        self.addQuestion('тізім құру үшін қай тег қолданылады ?', 'ul және ol', 'ul және span', 'table');
-        self.addQuestion('Сұрақтар тауысылды.', 'ОК');
+        data.questions.forEach(q => self.addQuestion(q.msg, q.rightAnswer, ...q.wrongAnswers));
     }
 
     addQuestion(msg, rightAnswer, ...wrongAnswers) {
